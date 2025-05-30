@@ -4,10 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <script>
+    'use strict'
+
+    const formContainer = document.getElementById('formContainer')
+
+    const moverOverlay = () => formContainer.classList.toggle('mover')
+
+    document.getElementById('abrirCadastro').addEventListener('click', moverOverlay)
+    document.getElementById('abrirLogin').addEventListener('click', moverOverlay)
+    </script>
+
+    <link rel="stylesheet" href="../styles/loginCadastro.css">
+
 </head>
 <body>
-    <h1>Login</h1>
-    
+    <div class="containerLoginCadastro">
+            <div class="formContainer" id='formContainer'>
+                <form action="" class='form-login'>
+                    <h1>Bem vindo!</h1>
+
+                    <div class='formulario'>
+                        <label for="">E-mail:</label>
+                        <br />
+                        <input type="text" />
+                        <br /><br />
+
+                        <label for="">Senha:</label>
+                        <br />
+                        <input type="text" />
+                        <br />
+                    </div>
+
+                    <div class='botao'>
+                        <button>Entrar</button>
+
+                        <p>Não tem conta? <Link id='abrirCadastro'>cadastre-se</Link></p>
+                    </div>
+                </form>
+
+                <form action="" class='form-cadastro'>
+                    <h1>Bem vindo!</h1>
+
+                    <div class='formulario'>
+                        <label for="">Nome:</label>
+                        <br />
+                        <input type="text" />
+                        <br /><br />
+
+                        <label for="">E-mail:</label>
+                        <br />
+                        <input type="text" />
+                        <br /><br />
+
+                        <label for="">Senha:</label>
+                        <br />
+                        <input type="text" />
+                        <br /><br />
+                    </div>
+
+                    <div class='botao'>
+                        <button>Cadastrar</button>
+
+                        <p>Já tem conta? <Link id='abrirLogin'>Entrar</Link></p>
+                    </div>
+                    
+                </form>
+
+                <div class='overlayContainer'>
+                <div class='overlay'>
+                    
+                </div>
+                <div class='overlay'>
+                    
+                </div>
+            </div>
+            </div>  
+        </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+ 
+        
+   
